@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .chatbot-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    width: 30vw;
+    position: fixed;
+    right: 0;
+    top: 97px; /* Adjust this value as needed */
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chatbot-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .chatbot-header h2 {
+    margin: 0;
+  }
+  
+  .clear-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .clear-button:hover {
+    background-color: #c82333;
+  }
+  
+  .messages {
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .message {
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 20px;
+    max-width: 80%;
+    word-wrap: break-word;
+    position: relative;
+  }
+  
+  .message.user {
+    background-color: #007bff;
+    color: #fff;
+    align-self: flex-start;
+    text-align: left;
+  }
+  
+  .message.bot {
+    background-color: #e0e0e0;
+    align-self: flex-end;
+    text-align: left;
+    color: #333;
+  }
+  
+  .message .message-text {
+    display: block;
+  }
+  
+  .message .timestamp {
+    display: block;
+    font-size: 0.8em;
+    color: #999;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .send-button {
+    background-color: #28a745;
+  }
+  
+  .send-button:hover {
+    background-color: #218838;
+  }
+  

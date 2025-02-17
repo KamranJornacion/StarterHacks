@@ -1,0 +1,39 @@
+.recipe-item {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: 250px;
+    background-color: #ffffff;
+    margin: 16px;
+    position: relative; /* Position relative for positioning the quantity */
+}
+
+.recipe-item img {
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+    border-radius: 8px;
+    margin-right: 16px; /* Space between image and text */
+}
+
+.recipe-item .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Full height of the recipe item */
+}
+
+.recipe-item .name {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.recipe-item .quantity {
+    font-size: 1em;
+    color: #666;
+    align-self: flex-end; /* Aligns the quantity to the bottom of the container */
+}
+

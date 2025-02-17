@@ -1,0 +1,17 @@
+.itemWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+h3, p {
+    margin: 5px;
+}
+
+.itemNumCtrl {
+    display: flex;
+}
+
+.changeNumBtn {
+    margin: 0px 5px;
+}
